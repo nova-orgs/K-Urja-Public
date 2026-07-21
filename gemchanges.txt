@@ -1,0 +1,27 @@
+# Changes for k_urja project
+
+This document summarizes the refactoring changes applied to the K-Urja Flutter project.
+
+## Added Dependencies
+
+- **`email_validator`**: Added to provide robust and reliable email address validation, replacing a basic regex.
+
+## File Changes
+
+### `lib/main.dart`
+
+- **Centralized Theming**: Replaced the basic `ThemeData` with a modern Material 3 theme using `ColorScheme.fromSeed`. This ensures a consistent and harmonious color palette throughout the app.
+- **Component Themes**: Defined app-wide styles for `InputDecorationTheme` (for text fields) and `ElevatedButtonTheme` (for buttons). This removes duplicate styling from individual widgets and makes future UI changes easier.
+- **Cleaned Imports**: Updated a relative `../../` import path to a package-relative path (`package:k_urja/...`) for better code structure and maintainability.
+
+### `lib/presentation/widgets/custom_textfield.dart`
+
+- **Decoupled Validation**: The widget has been refactored to be a pure presentation component. Instead of containing its own validation logic, it now accepts an optional `validator` function as a parameter. This greatly improves reusability and separates UI from business logic.
+- **Themed Styling**: Removed hardcoded styles (e.g., `color: Colors.grey`, `OutlineInputBorder`). The widget now correctly inherits its appearance from the `InputDecorationTheme` and `ColorScheme` defined in `main.dart`.
+
+### `lib/presentation/screens/signup_page.dart`
+
+- **Implemented Validation Logic**: The screen now provides specific validation rules to each `CustomTextField` via the new `validator` property. This makes the form's requirements clear and easy to manage in one place.
+- **Improved User Experience**: Implemented a loading state (`_isLoading`). When the user taps "Signup", the button is disabled and shows a `CircularProgressIndicator`, providing clear feedback that an action is in progress.
+- **Asynchronous Handling**: The `_handleSignup` method was converted to an `async` function to correctly manage the loading state and accommodate future asynchronous operations like network requests.
+- **Code Cleanup**: Replaced hardcoded styles with theme-based widgets, removed unnecessary `SizedBox` wrappers around buttons, and cleaned up imports to use package-relative paths.

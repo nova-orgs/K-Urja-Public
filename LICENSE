@@ -1,0 +1,20 @@
+# PROPRIETARY AND SOURCE-AVAILABLE (REVIEW ONLY) LICENSE
+
+Copyright (c) 2026. All Rights Reserved.
+
+## 1. TERMS AND CONDITIONS
+
+This source code and associated documentation files (the "Software") are made available strictly for **review, audit, and educational inspection purposes**.
+
+### 2. PERMITTED USES
+- **Inspection & Review**: You are granted a limited, non-exclusive, non-transferable right to view and inspect the source code solely for assessment, auditing, and review purposes.
+
+### 3. PROHIBITED USES
+Except as expressly authorized above, you **MAY NOT**:
+- **Distribution**: Copy, distribute, publish, frame, mirror, or otherwise transfer the Software or any portion thereof.
+- **Commercial Use**: Use, integrate, or leverage the Software or any derivative works in any commercial product, service, or offering.
+- **Modification**: Modify, alter, adapt, translate, build upon, or create derivative works based on the Software.
+- **Execution & Deployment**: Deploy, run, host, or execute the Software in any production, staging, or public environment.
+
+### 4. NO WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
